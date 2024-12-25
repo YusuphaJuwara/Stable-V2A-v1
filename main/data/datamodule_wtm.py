@@ -200,16 +200,16 @@ if __name__ == '__main__':
 
 
     datamodule = GreatestHitsDatamodule(
-        root_dir="/home/riccardo/Documents/syncfusion/data/Walking-the-maps/videoclip_processsed",
-        train_split_file_path="/home/riccardo/Documents/syncfusion/data/Walking-the-maps/wtm_train.txt",
+        root_dir="data/Walking-the-maps/videoclip_processsed",
+        train_split_file_path="data/Walking-the-maps/wtm_train.txt",
         train_data_to_use=1.0,
         train_frames_transforms=train_transforms,
 
-        val_split_file_path="/home/riccardo/Documents/syncfusion/data/Walking-the-maps/wtm_val.txt",
+        val_split_file_path="data/Walking-the-maps/wtm_val.txt",
         val_data_to_use=1.0,
         val_frames_transforms=val_transforms,
 
-        test_split_file_path="/home/riccardo/Documents/syncfusion/data/Walking-the-maps/wtm_test.txt",
+        test_split_file_path="data/Walking-the-maps/wtm_test.txt",
         test_data_to_use=1.0,
         test_frames_transforms=test_transforms,
 

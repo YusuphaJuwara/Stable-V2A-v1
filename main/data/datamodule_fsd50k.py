@@ -166,17 +166,18 @@ if __name__ == '__main__':
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ]
 
+    rdir = "GREATEST-HITS-DATASET/mic-mp4-processed/"
     datamodule = FSD50KDatamodule(
-        root_dir="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/",
-        train_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/train.txt",
+        root_dir=f"{rdir}",
+        train_split_file_path="{rdir}train.txt",
         train_data_to_use=0.01,
         train_frames_transforms=train_transforms,
 
-        val_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4/val.txt",
+        val_split_file_path="{rdir}val.txt",
         val_data_to_use=0.1,
         val_frames_transforms=val_transforms,
 
-        test_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/test.txt",
+        test_split_file_path="{rdir}test.txt",
         test_data_to_use=0.1,
         test_frames_transforms=test_transforms,
 

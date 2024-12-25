@@ -16,7 +16,7 @@ model:
   use_cavp: ${use_cavp}
   sample_rate: ${sample_rate}
   sample_size: ${sample_size}
-  cavp_config_path: /home/christian/syncfusion/Stable-Video2Audio/main/CAVP/config/Stage1_CAVP.yaml
+  cavp_config_path: main/CAVP/config/Stage1_CAVP.yaml
   cavp_ckpt_path: logs\cavp_ckpt\cavp_epoch66.ckpt
   clap_ckpt_path: logs\clap_ckpt\630k-audioset-best.pt
   

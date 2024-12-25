@@ -222,7 +222,7 @@ class WalkingTheMapsDataset(torch.utils.data.Dataset):
             # mu_expanded = chunk["rms_expanded"]
             # rms_original = chunk["rms_original"]
 
-            path_all_rms = "/home/christian/syncfusion/logs/video2rms/rms_pred_WTM_best/"
+            path_all_rms = "logs/video2rms/rms_pred_WTM_best/"
             with open(f"{path_all_rms}/{chunk['video_name']}_{int(chunk['start_time'])*30}_{int(chunk['end_time'])*30}.npy", "rb") as f:
                 chunk_rms = np.load(f)
 
@@ -281,8 +281,8 @@ class WalkingTheMapsDataset(torch.utils.data.Dataset):
 
 if __name__ == '__main__':
     dataset = WalkingTheMapsDataset(
-        root_dir="/home/riccardo/Documents/syncfusion/data/Walking-the-maps/videoclip_processsed",
-        split_file_path="/home/riccardo/Documents/syncfusion/main/dataset_wtm.py",
+        root_dir="data/Walking-the-maps/videoclip_processsed",
+        split_file_path="main/dataset_wtm.py",
         split='train',
         data_to_use=0.01,
         chunk_length_in_seconds=2.0,

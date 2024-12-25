@@ -349,9 +349,10 @@ class GreatestHitsDataset(torch.utils.data.Dataset):
 
 
 if __name__ == '__main__':
+    rdir = "GREATEST-HITS-DATASET/mic-mp4-processed"
     dataset = GreatestHitsDataset(
-        root_dir="/home/christian/mic-mp4-processed",
-        split_file_path="/home/christian/mic-mp4-processed/val_fewer.txt",
+        root_dir=f"{rdir}",
+        split_file_path=f"{rdir}/val.txt",
         split='val',
         data_to_use=0.1,
         chunk_length_in_seconds=2.0,

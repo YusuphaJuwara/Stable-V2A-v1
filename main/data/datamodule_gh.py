@@ -206,16 +206,16 @@ if __name__ == '__main__':
     ]
 
     datamodule = GreatestHitsDatamodule(
-        root_dir="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/",
-        train_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/train.txt",
+        root_dir="GREATEST-HITS-DATASET/mic-mp4-processed/",
+        train_split_file_path="GREATEST-HITS-DATASET/mic-mp4-processed/train.txt",
         train_data_to_use=0.01,
         train_frames_transforms=train_transforms,
 
-        val_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4/val.txt",
+        val_split_file_path="GREATEST-HITS-DATASET/mic-mp4/val.txt",
         val_data_to_use=0.1,
         val_frames_transforms=val_transforms,
 
-        test_split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/test.txt",
+        test_split_file_path="GREATEST-HITS-DATASET/mic-mp4-processed/test.txt",
         test_data_to_use=0.1,
         test_frames_transforms=test_transforms,
 

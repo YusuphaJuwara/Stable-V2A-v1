@@ -1,17 +1,18 @@
+rdir: GREATEST-HITS-DATASET/mic-mp4-processed
 data:
   class_path: stable_audio_tools.CAVP.main.GreatestHitsDatamodule
   init_args:
-    root_dir: /home/christian/mic-mp4-processed
+    root_dir: ${rdir}
     
-    train_split_file_path: /home/christian/syncfusion/train_all2.txt
+    train_split_file_path: ${rdir}/train_all.txt #train_all2.txt
     train_data_to_use: 0.01
     train_frames_transforms: null
 
-    val_split_file_path: /home/christian/Documents/syncfusion/val_fewer.txt
+    val_split_file_path: ${rdir}/val.txt #/home/christian/Documents/syncfusion/val_fewer.txt
     val_data_to_use: 0.1
     val_frames_transforms: null
 
-    test_split_file_path: /home/christian/Documents/syncfusion/test.txt
+    test_split_file_path: ${rdir}/test.txt #/home/christian/Documents/syncfusion/test.txt
     test_data_to_use: 0.1
     test_frames_transforms: null
     

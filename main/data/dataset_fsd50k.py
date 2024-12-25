@@ -297,8 +297,8 @@ class Freesound50KDataset(torch.utils.data.Dataset):
 
 if __name__ == '__main__':
     dataset = Freesound50KDataset(
-        root_dir="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed",
-        split_file_path="/import/c4dm-datasets-ext/DIFF-SFX/GREATEST-HITS-DATASET/mic-mp4-processed/val.txt",
+        root_dir="GREATEST-HITS-DATASET/mic-mp4-processed",
+        split_file_path="GREATEST-HITS-DATASET/mic-mp4-processed/val.txt",
         split='val',
         data_to_use=0.1,
         chunk_length_in_seconds=2.0,
