@@ -1,0 +1,22 @@
+# @package _global_
+
+model:
+  _target_: main.module_controlnet.Model
+  lr: 1e-4
+  lr_beta1: 0.95
+  lr_beta2: 0.999
+  lr_eps: 1e-6
+  lr_weight_decay: 1e-3
+  cfg_dropout_prob: 0.1
+  controlnet_dropout_prob: 0.0
+  rms_window_size: 10000
+  low_pass_window_size: 2000
+  depth_factor: 0.2
+  flag_modality: ${flag_modality}
+  use_cavp: ${use_cavp}
+  sample_rate: ${sample_rate}
+  sample_size: ${sample_size}
+  cavp_config_path: /home/christian/syncfusion/Stable-Video2Audio/main/CAVP/config/Stage1_CAVP.yaml
+  cavp_ckpt_path: logs\cavp_ckpt\cavp_epoch66.ckpt
+  clap_ckpt_path: logs\clap_ckpt\630k-audioset-best.pt
+  

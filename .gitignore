@@ -1,0 +1,17 @@
+# Virtual Environment
+stablefoley
+*.env
+
+# Exclude all .ckpt files
+*.ckpt
+
+# Exclude all .pt files
+*.pt
+
+# Exclude all .pth files
+*.pth
+
+# Ignore __pycache__ directories
+__pycache__/
+*.pyc
+

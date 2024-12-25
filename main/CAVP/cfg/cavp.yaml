@@ -1,0 +1,6 @@
+cavp_emb:
+  class_path: main.cavp.CAVPFeatureExtractor
+  init_args:
+    config_path: "./config/Stage1_CAVP.yaml"
+    ckpt_path: "logs/cavp_ckpt/cavp_epoch66.ckpt"
+    
